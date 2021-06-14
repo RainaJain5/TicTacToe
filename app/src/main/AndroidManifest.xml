@@ -9,12 +9,13 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.TicTacToe">
+        <activity android:name=".OnePlayer"></activity>
+        <activity android:name=".OnePlayerName" />
         <activity android:name=".TwoplayerName" />
         <activity android:name=".TwoPlayer" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

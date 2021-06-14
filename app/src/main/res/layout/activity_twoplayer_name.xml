@@ -8,19 +8,31 @@
     android:background="@drawable/back">
 
 
+    <ImageView
+        android:id="@+id/ximg"
+        android:layout_width="82dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/x"
+        android:background="#2f045f"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
     <TextView
         android:id="@+id/textview3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
         android:fontFamily="serif"
-        android:gravity="left"
-        android:text="Enter name of Player 1 ( X ) : "
+        android:gravity="right"
+        android:text="@string/player_1"
         android:textColor="#E45167"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ximg"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
@@ -38,21 +50,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview3" />
 
+    <ImageView
+        android:id="@+id/oimg"
+        android:layout_width="82dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/o"
+        android:background="#2f045f"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name1">
+
+    </ImageView>
+
     <TextView
         android:id="@+id/textview4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="89dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
         android:fontFamily="serif"
-        android:gravity="left"
-        android:text="Enter name of Player 2 ( 0 ) : "
+        android:gravity="right"
+        android:text="@string/player_2"
         android:textColor="#E45167"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name1"/>
+        app:layout_constraintStart_toEndOf="@+id/oimg"
+        app:layout_constraintTop_toBottomOf="@+id/name1" />
 
     <EditText
         android:id="@+id/name2"
@@ -75,7 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:fontFamily="@font/aladin"
-        android:text="Submit"
+        android:text="@string/start_game"
         android:onClick="submit"
         android:textColor="#E45167"
         android:textSize="25sp"

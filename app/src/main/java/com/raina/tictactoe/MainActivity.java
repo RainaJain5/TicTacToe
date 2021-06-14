@@ -20,4 +20,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, TwoplayerName.class);
         startActivity(intent);
     }
+
+    public void oneplayer(View view)
+    {
+        Intent intent = new Intent(MainActivity.this, OnePlayerName.class);
+        startActivity(intent);
+    }
 }

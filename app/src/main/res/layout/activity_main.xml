@@ -18,18 +18,30 @@
 
 
         <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/aladin"
+            android:backgroundTint="#2A025B"
+            android:onClick="oneplayer"
+            android:text="@string/one_player"
+            android:textColor="#F862FB"
+            android:textSize="40sp" />
+
+        <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="30dp"
             android:fontFamily="@font/aladin"
             android:backgroundTint="#2A025B"
             android:onClick="twoplayer"
             android:text="@string/two_player"
             android:textColor="#F862FB"
-            android:textSize="50sp" />
+            android:textSize="40sp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
